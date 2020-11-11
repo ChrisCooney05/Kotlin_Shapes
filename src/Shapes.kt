@@ -36,4 +36,16 @@ fun main() {
         triRowLen--
     }
 
+    //@grid is a label. if 1 == 3 we can break out of both loops
+    //can also be used with continue to skip a block
+    grid@ for (i in 1..3) {
+        for ( j in 'A'..'C') {
+            if (i == 3) {
+                break@grid
+            }
+            print("$i$j")
+        }
+        println()
+    }
+
 }
